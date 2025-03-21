@@ -12,22 +12,17 @@ export default function ProductCard() {
       <div className="bg-white rounded-xl shadow-md overflow-hidden w-40 ">
         {/* Phần ảnh sản phẩm + các badge */}
         <div className="relative w-full h-40">
-          {/* Ảnh sản phẩm */}
           <img src={Bg} alt="Product" className="w-full h-full object-cover" />
 
-          {/* Giảm giá */}
           <div className="font-primary absolute top-0 left-0 bg-red-500 text-white text-[8px] font-bold px-2 py-1 min-w-[30px] min-h-[15px]  rounded-br-md opacity-80 backdrop-blur-sm flex items-center justify-center">
             -50%
           </div>
 
-          {/* Icon yêu thích */}
           <div className="absolute top-2 right-2 bg-white rounded-full p-2 shadow opacity-90 flex items-center justify-center">
             <Heart size={12} className="text-gray-600" />
           </div>
 
-          {/* FREE và Quà tặng - góc trái dưới ảnh */}
           <div className="absolute bottom-0 left-0 flex items-center">
-            {/* FREE Label */}
             <span className=" font-primary inline-flex items-center justify-center gap-1 bg-green-500 text-white font-semibold h-4 min-w-[48px] px-2 py-1 text-[8px] ">
               <svg
                 width="12"
@@ -70,7 +65,6 @@ export default function ProductCard() {
               FREE
             </span>
             <span className="font-primary inline-flex items-center justify-center gap-1 bg-yellow-500 text-white  h-4 min-w-[60px] px-2 py-1 text-[8px] ">
-              {/* SVG Icon */}
               <svg
                 width="10"
                 height="10"
@@ -89,26 +83,21 @@ export default function ProductCard() {
                   fill="#CC7600"
                 />
               </svg>
-              {/* Text */}
               Quà tặng
             </span>
           </div>
         </div>
 
-        {/* Nội dung chi tiết */}
         <div className="p-1">
-          {/* Flash Sale + Time */}
           <div className="flex justify-center items-center text-pink-500 text-[6px] font-bold bg-[#FFE7ED] rounded-md ">
             <img src={FS} alt="Product" className="w-10 h-auto object-cover " />
             <span className="relative  font-primary">·20:20·12/12</span>
           </div>
 
-          {/* Tên sản phẩm */}
           <div className="font-primary text-sm text-left text-gray-800 leading-tight line-clamp-2">
             Nước giặt cho da nhạy cảm - Econova Bucato W...
           </div>
 
-          {/* Giá + Đã bán */}
           <div>
             <div className="flex items-baseline">
               <span className="text-[#F79009] font-bold text-xs underline relative -top-0.5">
